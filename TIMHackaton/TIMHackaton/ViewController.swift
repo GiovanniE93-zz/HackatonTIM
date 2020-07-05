@@ -18,7 +18,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     override func viewWillAppear(_ animated: Bool) {
         
-        presentPanModal(ModalViewController())
+//        presentPanModal(ModalViewController())
         
     }
     
@@ -35,8 +35,8 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         self.managerPisition.startUpdatingLocation()
         
         let request = MKLocalSearch.Request()
-        request.pointOfInterestFilter = MKPointOfInterestFilter(including: .init(arrayLiteral: .cafe))
-//        request.region = MKCoordinateRegion(center: managerPisition.location!.coordinate, latitudinalMeters: 10000, longitudinalMeters: 10000)
+        request.pointOfInterestFilter = MKPointOfInterestFilter(including: .init(arrayLiteral: .museum))
+        request.region = MKCoordinateRegion(center: managerPisition.location?.coordinate ?? CLLocationCoordinate2D(), latitudinalMeters: 10000, longitudinalMeters: 10000)
         
         let search = MKLocalSearch(request: request)
         search.start { (results, error) in
@@ -44,8 +44,12 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             let mapItems = results?.mapItems
             
             for elem in mapItems! {
-                print("[ELEM] name: \(elem)")
+//                print("[ELEM] name: \(elem)")
 //                devi aggiungere i poi alla mappa
+                let annotation = MKPointAnnotation()
+                annotation.title = elem.name
+                annotation.coordinate = elem.placemark.coordinate
+                self.myMapView.addAnnotation(annotation)
     
                 
             }
@@ -67,26 +71,28 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         
     }
     
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) ->MKAnnotationView? {
-        
-        guard annotation is MKPointAnnotation else {return nil}
-        
-        let identifier = "Annotation"
-        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
-        
-        if(annotationView == nil) {
-            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-            annotationView!.canShowCallout = true
-            
-        } else {
-            
-            annotationView!.annotation = annotation
-            
-        }
-        
-        return annotationView
-        
-    }
+//    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) ->MKAnnotationView? {
+//
+//        guard annotation is MKPointAnnotation else {return nil}
+//
+//        print("ADD ANNOTATION")
+//
+//        let identifier = "Annotation"
+//        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+//
+//        if(annotationView == nil) {
+//            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+//            annotationView!.canShowCallout = true
+//
+//        } else {
+//
+//            annotationView!.annotation = annotation
+//
+//        }
+//
+//        return annotationView
+//
+//    }
     
     
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
@@ -97,6 +103,3 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
 
 
 }
-
-
-

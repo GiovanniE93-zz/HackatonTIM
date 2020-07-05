@@ -40,7 +40,7 @@ extension ModalViewController : PanModalPresentable {
     }
     
     var longFormHeight: PanModalHeight {
-        return .maxHeightWithTopInset(200)
+        return .maxHeightWithTopInset(400)
     }
     
     var anchorModalToLongForm: Bool {
