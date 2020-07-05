@@ -33,7 +33,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         
         let request = MKLocalSearch.Request()
         request.pointOfInterestFilter = MKPointOfInterestFilter(including: .init(arrayLiteral: .cafe))
-        request.region = MKCoordinateRegion(center: managerPisition.location!.coordinate, latitudinalMeters: 10000, longitudinalMeters: 10000)
+//        request.region = MKCoordinateRegion(center: managerPisition.location!.coordinate, latitudinalMeters: 10000, longitudinalMeters: 10000)
         
         let search = MKLocalSearch(request: request)
         search.start { (results, error) in
@@ -48,9 +48,6 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             }
             
         }
-        
-        
-        
         
     }
     
@@ -96,5 +93,25 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     }
 
 
+}
+
+extension ViewController : PanModalPresentable {
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    var panScrollable: UIScrollView? {
+        return nil
+    }
+    
+    var longFormHeight: PanModalHeight {
+        return .maxHeightWithTopInset(200)
+    }
+    
+    var anchorModalToLongForm: Bool {
+        return false
+    }
+    
 }
 

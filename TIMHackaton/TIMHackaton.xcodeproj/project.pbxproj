@@ -26,7 +26,6 @@
 		8DD20A6224B1AE0100B733C9 /* PanModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD20A5324B1AE0100B733C9 /* PanModalPresentationController.swift */; };
 		8DD20A6324B1AE0100B733C9 /* PanContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD20A5524B1AE0100B733C9 /* PanContainerView.swift */; };
 		8DD20A6424B1AE0100B733C9 /* DimmedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD20A5624B1AE0100B733C9 /* DimmedView.swift */; };
-		8DD20A6524B1AE0100B733C9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8DD20A5724B1AE0100B733C9 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -225,7 +224,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DD20A6524B1AE0100B733C9 /* Info.plist in Resources */,
 				8DD20A3B24B0CA0B00B733C9 /* LaunchScreen.storyboard in Resources */,
 				8DD20A3824B0CA0B00B733C9 /* Assets.xcassets in Resources */,
 				8DD20A3624B0CA0A00B733C9 /* Main.storyboard in Resources */,
