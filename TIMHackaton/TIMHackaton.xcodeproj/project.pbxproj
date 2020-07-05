@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D942F4024B1B0970085AE9A /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D942F3F24B1B0970085AE9A /* ModalViewController.swift */; };
 		8DD20A2F24B0CA0A00B733C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD20A2E24B0CA0A00B733C9 /* AppDelegate.swift */; };
 		8DD20A3124B0CA0A00B733C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD20A3024B0CA0A00B733C9 /* SceneDelegate.swift */; };
 		8DD20A3324B0CA0A00B733C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD20A3224B0CA0A00B733C9 /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D942F3F24B1B0970085AE9A /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		8DD20A2B24B0CA0A00B733C9 /* TIMHackaton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TIMHackaton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD20A2E24B0CA0A00B733C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DD20A3024B0CA0A00B733C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				8DD20A2E24B0CA0A00B733C9 /* AppDelegate.swift */,
 				8DD20A3024B0CA0A00B733C9 /* SceneDelegate.swift */,
 				8DD20A3224B0CA0A00B733C9 /* ViewController.swift */,
+				8D942F3F24B1B0970085AE9A /* ModalViewController.swift */,
 				8DD20A4224B1AE0100B733C9 /* PanModal */,
 				8DD20A3424B0CA0A00B733C9 /* Main.storyboard */,
 				8DD20A3724B0CA0B00B733C9 /* Assets.xcassets */,
@@ -243,6 +246,7 @@
 				8DD20A5E24B1AE0100B733C9 /* PanModalPresenter.swift in Sources */,
 				8DD20A5924B1AE0100B733C9 /* PanModalPresentable.swift in Sources */,
 				8DD20A6324B1AE0100B733C9 /* PanContainerView.swift in Sources */,
+				8D942F4024B1B0970085AE9A /* ModalViewController.swift in Sources */,
 				8DD20A6424B1AE0100B733C9 /* DimmedView.swift in Sources */,
 				8DD20A6024B1AE0100B733C9 /* PanModalAnimator.swift in Sources */,
 				8DD20A5F24B1AE0100B733C9 /* PanModalPresentationDelegate.swift in Sources */,

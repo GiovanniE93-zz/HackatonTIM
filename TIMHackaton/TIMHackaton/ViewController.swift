@@ -18,7 +18,10 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     override func viewWillAppear(_ animated: Bool) {
         
+        presentPanModal(ModalViewController())
+        
     }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -95,23 +98,5 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
 
 }
 
-extension ViewController : PanModalPresentable {
-    
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
-    
-    var panScrollable: UIScrollView? {
-        return nil
-    }
-    
-    var longFormHeight: PanModalHeight {
-        return .maxHeightWithTopInset(200)
-    }
-    
-    var anchorModalToLongForm: Bool {
-        return false
-    }
-    
-}
+
 
