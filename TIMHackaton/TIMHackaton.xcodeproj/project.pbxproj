@@ -13,6 +13,20 @@
 		8DD20A3624B0CA0A00B733C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DD20A3424B0CA0A00B733C9 /* Main.storyboard */; };
 		8DD20A3824B0CA0B00B733C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DD20A3724B0CA0B00B733C9 /* Assets.xcassets */; };
 		8DD20A3B24B0CA0B00B733C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DD20A3924B0CA0B00B733C9 /* LaunchScreen.storyboard */; };
+		8DD20A5824B1AE0100B733C9 /* PanModalPresentable+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD20A4424B1AE0100B733C9 /* PanModalPresentable+Defaults.swift */; };
+		8DD20A5924B1AE0100B733C9 /* PanModalPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD20A4524B1AE0100B733C9 /* PanModalPresentable.swift */; };
+		8DD20A5A24B1AE0100B733C9 /* PanModalPresentable+LayoutHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD20A4624B1AE0100B733C9 /* PanModalPresentable+LayoutHelpers.swift */; };
+		8DD20A5B24B1AE0100B733C9 /* PanModalHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD20A4724B1AE0100B733C9 /* PanModalHeight.swift */; };
+		8DD20A5C24B1AE0100B733C9 /* PanModalPresentable+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD20A4824B1AE0100B733C9 /* PanModalPresentable+UIViewController.swift */; };
+		8DD20A5D24B1AE0100B733C9 /* UIViewController+PanModalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD20A4B24B1AE0100B733C9 /* UIViewController+PanModalPresenter.swift */; };
+		8DD20A5E24B1AE0100B733C9 /* PanModalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD20A4C24B1AE0100B733C9 /* PanModalPresenter.swift */; };
+		8DD20A5F24B1AE0100B733C9 /* PanModalPresentationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD20A4E24B1AE0100B733C9 /* PanModalPresentationDelegate.swift */; };
+		8DD20A6024B1AE0100B733C9 /* PanModalAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD20A5024B1AE0100B733C9 /* PanModalAnimator.swift */; };
+		8DD20A6124B1AE0100B733C9 /* PanModalPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD20A5124B1AE0100B733C9 /* PanModalPresentationAnimator.swift */; };
+		8DD20A6224B1AE0100B733C9 /* PanModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD20A5324B1AE0100B733C9 /* PanModalPresentationController.swift */; };
+		8DD20A6324B1AE0100B733C9 /* PanContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD20A5524B1AE0100B733C9 /* PanContainerView.swift */; };
+		8DD20A6424B1AE0100B733C9 /* DimmedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD20A5624B1AE0100B733C9 /* DimmedView.swift */; };
+		8DD20A6524B1AE0100B733C9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8DD20A5724B1AE0100B733C9 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +38,21 @@
 		8DD20A3724B0CA0B00B733C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DD20A3A24B0CA0B00B733C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DD20A3C24B0CA0B00B733C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DD20A4424B1AE0100B733C9 /* PanModalPresentable+Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PanModalPresentable+Defaults.swift"; sourceTree = "<group>"; };
+		8DD20A4524B1AE0100B733C9 /* PanModalPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanModalPresentable.swift; sourceTree = "<group>"; };
+		8DD20A4624B1AE0100B733C9 /* PanModalPresentable+LayoutHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PanModalPresentable+LayoutHelpers.swift"; sourceTree = "<group>"; };
+		8DD20A4724B1AE0100B733C9 /* PanModalHeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanModalHeight.swift; sourceTree = "<group>"; };
+		8DD20A4824B1AE0100B733C9 /* PanModalPresentable+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PanModalPresentable+UIViewController.swift"; sourceTree = "<group>"; };
+		8DD20A4924B1AE0100B733C9 /* PanModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanModal.h; sourceTree = "<group>"; };
+		8DD20A4B24B1AE0100B733C9 /* UIViewController+PanModalPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+PanModalPresenter.swift"; sourceTree = "<group>"; };
+		8DD20A4C24B1AE0100B733C9 /* PanModalPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanModalPresenter.swift; sourceTree = "<group>"; };
+		8DD20A4E24B1AE0100B733C9 /* PanModalPresentationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanModalPresentationDelegate.swift; sourceTree = "<group>"; };
+		8DD20A5024B1AE0100B733C9 /* PanModalAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanModalAnimator.swift; sourceTree = "<group>"; };
+		8DD20A5124B1AE0100B733C9 /* PanModalPresentationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanModalPresentationAnimator.swift; sourceTree = "<group>"; };
+		8DD20A5324B1AE0100B733C9 /* PanModalPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanModalPresentationController.swift; sourceTree = "<group>"; };
+		8DD20A5524B1AE0100B733C9 /* PanContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanContainerView.swift; sourceTree = "<group>"; };
+		8DD20A5624B1AE0100B733C9 /* DimmedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimmedView.swift; sourceTree = "<group>"; };
+		8DD20A5724B1AE0100B733C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +88,83 @@
 				8DD20A2E24B0CA0A00B733C9 /* AppDelegate.swift */,
 				8DD20A3024B0CA0A00B733C9 /* SceneDelegate.swift */,
 				8DD20A3224B0CA0A00B733C9 /* ViewController.swift */,
+				8DD20A4224B1AE0100B733C9 /* PanModal */,
 				8DD20A3424B0CA0A00B733C9 /* Main.storyboard */,
 				8DD20A3724B0CA0B00B733C9 /* Assets.xcassets */,
 				8DD20A3924B0CA0B00B733C9 /* LaunchScreen.storyboard */,
 				8DD20A3C24B0CA0B00B733C9 /* Info.plist */,
 			);
 			path = TIMHackaton;
+			sourceTree = "<group>";
+		};
+		8DD20A4224B1AE0100B733C9 /* PanModal */ = {
+			isa = PBXGroup;
+			children = (
+				8DD20A4324B1AE0100B733C9 /* Presentable */,
+				8DD20A4924B1AE0100B733C9 /* PanModal.h */,
+				8DD20A4A24B1AE0100B733C9 /* Presenter */,
+				8DD20A4D24B1AE0100B733C9 /* Delegate */,
+				8DD20A4F24B1AE0100B733C9 /* Animator */,
+				8DD20A5224B1AE0100B733C9 /* Controller */,
+				8DD20A5424B1AE0100B733C9 /* View */,
+				8DD20A5724B1AE0100B733C9 /* Info.plist */,
+			);
+			path = PanModal;
+			sourceTree = "<group>";
+		};
+		8DD20A4324B1AE0100B733C9 /* Presentable */ = {
+			isa = PBXGroup;
+			children = (
+				8DD20A4424B1AE0100B733C9 /* PanModalPresentable+Defaults.swift */,
+				8DD20A4524B1AE0100B733C9 /* PanModalPresentable.swift */,
+				8DD20A4624B1AE0100B733C9 /* PanModalPresentable+LayoutHelpers.swift */,
+				8DD20A4724B1AE0100B733C9 /* PanModalHeight.swift */,
+				8DD20A4824B1AE0100B733C9 /* PanModalPresentable+UIViewController.swift */,
+			);
+			path = Presentable;
+			sourceTree = "<group>";
+		};
+		8DD20A4A24B1AE0100B733C9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8DD20A4B24B1AE0100B733C9 /* UIViewController+PanModalPresenter.swift */,
+				8DD20A4C24B1AE0100B733C9 /* PanModalPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8DD20A4D24B1AE0100B733C9 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				8DD20A4E24B1AE0100B733C9 /* PanModalPresentationDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		8DD20A4F24B1AE0100B733C9 /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				8DD20A5024B1AE0100B733C9 /* PanModalAnimator.swift */,
+				8DD20A5124B1AE0100B733C9 /* PanModalPresentationAnimator.swift */,
+			);
+			path = Animator;
+			sourceTree = "<group>";
+		};
+		8DD20A5224B1AE0100B733C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8DD20A5324B1AE0100B733C9 /* PanModalPresentationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8DD20A5424B1AE0100B733C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8DD20A5524B1AE0100B733C9 /* PanContainerView.swift */,
+				8DD20A5624B1AE0100B733C9 /* DimmedView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DD20A6524B1AE0100B733C9 /* Info.plist in Resources */,
 				8DD20A3B24B0CA0B00B733C9 /* LaunchScreen.storyboard in Resources */,
 				8DD20A3824B0CA0B00B733C9 /* Assets.xcassets in Resources */,
 				8DD20A3624B0CA0A00B733C9 /* Main.storyboard in Resources */,
@@ -138,9 +239,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DD20A6124B1AE0100B733C9 /* PanModalPresentationAnimator.swift in Sources */,
 				8DD20A3324B0CA0A00B733C9 /* ViewController.swift in Sources */,
+				8DD20A5B24B1AE0100B733C9 /* PanModalHeight.swift in Sources */,
+				8DD20A5E24B1AE0100B733C9 /* PanModalPresenter.swift in Sources */,
+				8DD20A5924B1AE0100B733C9 /* PanModalPresentable.swift in Sources */,
+				8DD20A6324B1AE0100B733C9 /* PanContainerView.swift in Sources */,
+				8DD20A6424B1AE0100B733C9 /* DimmedView.swift in Sources */,
+				8DD20A6024B1AE0100B733C9 /* PanModalAnimator.swift in Sources */,
+				8DD20A5F24B1AE0100B733C9 /* PanModalPresentationDelegate.swift in Sources */,
+				8DD20A5824B1AE0100B733C9 /* PanModalPresentable+Defaults.swift in Sources */,
 				8DD20A2F24B0CA0A00B733C9 /* AppDelegate.swift in Sources */,
 				8DD20A3124B0CA0A00B733C9 /* SceneDelegate.swift in Sources */,
+				8DD20A5C24B1AE0100B733C9 /* PanModalPresentable+UIViewController.swift in Sources */,
+				8DD20A6224B1AE0100B733C9 /* PanModalPresentationController.swift in Sources */,
+				8DD20A5D24B1AE0100B733C9 /* UIViewController+PanModalPresenter.swift in Sources */,
+				8DD20A5A24B1AE0100B733C9 /* PanModalPresentable+LayoutHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

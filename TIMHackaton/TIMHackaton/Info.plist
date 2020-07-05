@@ -4,6 +4,14 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>L&apos;applicazione vorrebbe utilizzare la tua posizione</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>L&apos;applicazione vorrebbe utilizzare la tua posizione</string>
+	<key>NSLocationUsageDescription</key>
+	<string>L&apos;applicazione vorrebbe utilizzare la tua posizione</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>L&apos;applicazione vorrebbe utilizzare la tua posizione</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
