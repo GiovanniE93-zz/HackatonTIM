@@ -44,7 +44,6 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             let mapItems = results?.mapItems
             
             for elem in mapItems! {
-//                print("[ELEM] name: \(elem)")
 //                devi aggiungere i poi alla mappa
                 let annotation = MKPointAnnotation()
                 annotation.title = elem.name
@@ -71,33 +70,25 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         
     }
     
-//    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) ->MKAnnotationView? {
-//
-//        guard annotation is MKPointAnnotation else {return nil}
-//
-//        print("ADD ANNOTATION")
-//
-//        let identifier = "Annotation"
-//        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
-//
-//        if(annotationView == nil) {
-//            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-//            annotationView!.canShowCallout = true
-//
-//        } else {
-//
-//            annotationView!.annotation = annotation
-//
-//        }
-//
-//        return annotationView
-//
-//    }
-    
     
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
         
         print("[MapView - regionDidChane] lat: \(mapView.centerCoordinate.latitude) long: \(mapView.centerCoordinate.longitude)")
+        
+    }
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        
+        if(view.annotation!.coordinate.latitude == self.managerPisition.location!.coordinate.latitude && view.annotation!.coordinate.longitude == self.managerPisition.location!.coordinate.longitude) {
+            
+            print("[didSelect] wrong")
+            
+        } else {
+            
+            print("[didSelect] true")
+//          segue to new view
+            
+        }
         
     }
 
